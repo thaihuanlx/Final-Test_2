@@ -51,7 +51,7 @@ const Quote = () => {
                 </button>
             </div>
             {quote && (
-                <div style={{ marginBottom: '16px', maxWidth: '350px' }}>
+                <div style={{ marginBottom: '15px', maxWidth: '350px' }}>
                     <div className='text-quote'>"{quote.content}"</div>
                     <div className='div-author' onClick={handleAuthorClick}>
                         <div className='text-author'>
