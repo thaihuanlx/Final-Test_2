@@ -1,0 +1,59 @@
+.random {
+    position: absolute;
+    right: 30%;
+    top: 0;
+}
+
+.btn-random {
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #333333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.text-quote {
+    font-size: 20px;
+    font-weight: bold;
+    border-left: 3px solid yellow;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+
+.text-author {
+    display: flex;
+    cursor: pointer;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+
+    i {
+        color: white;
+    }
+}
+
+
+.div-author {
+    background: white;
+    padding: 20px 15px;
+
+    .tagName {
+        color: gray;
+        margin-top: 10px;
+        font-size: 12px;
+
+        .tag-item {
+            margin-right: 10px;
+        }
+    }
+}
+
+.div-author:hover {
+    background: #333333;
+    color: white;
+
+    .text-author {
+        color: white;
+    }
+}
