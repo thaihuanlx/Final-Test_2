@@ -19,7 +19,7 @@ const Quote = () => {
         try {
             const response = await axios.get('https://api.quotable.io/quotes');
             const data = response.data;
-            setQuote(data.results[0]);
+            setQuote(data.results[1]);
             setListQuote(data.results)
         } catch (error) {
             console.log('Error:', error);
@@ -35,7 +35,6 @@ const Quote = () => {
     };
 
     const handleAuthorClick = () => {
-        console.log("quote", quote)
         const getListQuoteOfAuthor = listQuote.filter(a => a.author === quote.author)
         setAuthor(quote.author)
         setAuthorQuotes(getListQuoteOfAuthor)
